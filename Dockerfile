@@ -1,4 +1,4 @@
-FROM mattsch/fedora-rpmfusion:latest
+FROM mattsch/fedora-rpmfusion:22
 MAINTAINER Matthew Schick <matthew.schick@gmail.com>
 
 # Install required packages
