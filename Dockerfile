@@ -5,6 +5,7 @@ MAINTAINER Matthew Schick <matthew.schick@gmail.com>
 RUN dnf install -yq git \
                     procps-ng \
                     python-lxml \
+                    pyOpenSSL \
                     tar \
                     unrar && \
     dnf clean all
