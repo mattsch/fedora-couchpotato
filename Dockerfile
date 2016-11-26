@@ -1,6 +1,10 @@
 FROM mattsch/fedora-rpmfusion:24
 MAINTAINER Matthew Schick <matthew.schick@gmail.com>
 
+# Run updates
+RUN dnf upgrade -yq && \
+    dnf clean all
+
 # Install required packages
 RUN dnf install -yq git \
                     procps-ng \
