@@ -1,10 +1,15 @@
 FROM mattsch/fedora-rpmfusion:latest
 MAINTAINER Matthew Schick <matthew.schick@gmail.com>
 
+# Run updates
+RUN dnf upgrade -yq && \
+    dnf clean all
+
 # Install required packages
 RUN dnf install -yq git \
                     procps-ng \
-                    python-lxml \
+                    python \
+                    python2-lxml \
                     pyOpenSSL \
                     tar \
                     unrar && \
